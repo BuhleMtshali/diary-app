@@ -17,6 +17,9 @@ h1 {
   font-size: 40px;
   font-weight: 700;
 }
+#pink {
+  color: #f21b3f;
+}
 textarea {
   width: 250px;
   height: 100px;
@@ -41,11 +44,15 @@ ul {
 }
 
 li {
-  border: 4px solid #f21b3f;
+  border: 4px solid #004b23;
   border-radius: 18px;
   width: 190px;
   margin: 10px;
   padding: 10px;
+  color: #143601;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: #93b1a7;
 }
 
 button {
@@ -62,6 +69,6 @@ button {
 }
 button:hover {
   background-color: #f3eff5;
-  color: #f21b3f;
+  color: #004b23;
   border: 4px solid #f21b3f;
 }
