@@ -1,15 +1,24 @@
 let feelingsElement = document.querySelector("#feelings-input");
 let listContainer = document.querySelector("#list-container");
-
 let feelingsArray = [];
+let feelingsFromStorage = JSON.parse(localStorage.getItem("myFeelings"));
 
-function addFeelings(event) {
-  event.preventDefault();
-  feelingsArray.push(feelingsElement.value);
-  feelingsElement.value = "";
+if (feelingsFromStorage) {
+  feelingsArray = feelingsFromStorage;
   renderFeelings();
 }
 
+function addFeelings(event) {
+  event.preventDefault();
+  if (feelingsElement.value === "") {
+    alert("Please enter something first");
+  } else {
+    feelingsArray.push(feelingsElement.value);
+    feelingsElement.value = "";
+    localStorage.setItem("myFeelings", JSON.stringify(feelingsArray));
+    renderFeelings();
+  }
+}
 function renderFeelings() {
   let feelingsList = "";
   for (let i = 0; i < feelingsArray.length; i++) {
@@ -29,6 +38,7 @@ function renderFeelings() {
 }
 function deleteNote(id) {
   feelingsArray.splice(id, 1);
+  localStorage.setItem("myFeelings", JSON.stringify(feelingsArray));
   renderFeelings();
 }
 

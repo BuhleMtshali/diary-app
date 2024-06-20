@@ -4,12 +4,42 @@ body {
   background-color: #f3eff5;
   user-select: none;
 }
+*:focus {
+  outline: none;
+}
 .container {
   margin: 0 auto;
   width: 50%;
+  text-align: center;
 }
 h1 {
   color: #004b23;
   font-size: 40px;
   font-weight: 700;
+}
+textarea {
+  width: 250px;
+  height: 100px;
+  border: 3px solid #004b23;
+  border-radius: 22px;
+  text-align: center;
+  padding: 10px;
+}
+ul {
+  list-style-type: none;
+}
+button {
+  padding: 12px 19px;
+  border-radius: 18px;
+  border: none;
+  background-color: #245501;
+  color: #f3eff5;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #f3eff5;
+  color: #245501;
+  border: 3px solid #004b23;
 }
