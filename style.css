@@ -1,4 +1,15 @@
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
+  background-color: #f3eff5;
+  user-select: none;
+}
+.container {
+  margin: 0 auto;
+  width: 50%;
+}
+h1 {
+  color: #004b23;
+  font-size: 40px;
+  font-weight: 700;
 }
