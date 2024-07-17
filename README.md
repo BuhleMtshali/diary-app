@@ -44,4 +44,4 @@ The **Feelings Diary App** allows users to jot down their feelings or notes for 
 
 ---
 
-Feel free to customize the "Author" section with your details. This README provides an overview of your app, its features, setup instructions, and licensing information. Adjust it further as needed for your project specifics.
+
